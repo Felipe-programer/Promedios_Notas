@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Colegio Mayor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="title">New School Developer</h1>
+    <form>
+        <label for="studentId">Identificacion</label>
+        <input id="studentId" type="number" max="9999999999">
+        <br>
+        <br>
+        <label for="studentName">Nombre</label>
+        <input id="studentName" type="text" max="50">
+        <br>
+        <br>
+        <input id="nota1" type="number" max="5" placeholder="nota 1">
+        <input id="nota2" type="number" max="5" placeholder="nota 2">
+        <input id="nota3" type="number" max="5" placeholder="nota 3">
+        <br>
+        <br>
+        <br>
+        <button id="saveDataBtn">Guardar</button>
+    </form>
+    <br>
+    <hr>
+  <!--   <a href="consultarData.html">Ir a consultar</a> -->
+    <div class="consultas">
+            <h1 class="title">Consulta</h1>
+            <form>
+                <input id="idToConsult" type="number" max="9999999999" placeholder="Id del estudiante a consultar">
+            </form>
+            <button id="consultarBtn"> Consultar </button>
+            <br>
+            <div class="notas">
+                <h3>Alumno</h3>
+                <input id="alumno"type="text">
+                <h3>nota 1</h3>
+                <input id="cNota1"type="number">
+                <h3>nota 2</h3>
+                <input id="cNota2"type="number">
+                <h3>nota 3</h3>
+                <input id="cNota3"type="number">
+            </div>
+            <div class="resultados">
+                <h2 id="promedio"></h2>
+                <h2 id="estado"></h2>
+            </div>
+
+        <!-- <a href="index.html">Ir al inicio</a> -->
+    </div>
+    <script src="assets/js/index.js"></script>
+   <!--  <script src="assets/js/consultarData.js"></script> -->
+</body>
+</html>
